@@ -1,100 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starvee Engine</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #080808;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
 
-  <div class="container mt-4">
-    <div class="p-5 text-dark  d-flex align-items-center position-relative" style="border-top: 4px solid gold; 
-                  border-right: 20px solid gold; 
-                  border-top-right-radius: 40px;
-                  border-radius: 0 0 50px 10px;">
+        /* NEON HEADER */
+        h1, h2 {
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 40px #FF4500;
+            color: #FFD700;
+        }
 
-      <!-- Image on the left -->
-      <!-- <img src="image/robot-ai.png" alt="AI Robot" class="img-fluid"
-        style="width: 200px; height: auto; position: absolute; bottom: 10px; left: 20px;"> -->
+        /* NEON EFFECT FOR FEATURES */
+        .neon-card {
+            background-color: #121212;
+            border: 2px solid #FFA500;
+            color: white;
+            box-shadow: 0 0 15px #FFA500;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
 
-      <!-- Text Content -->
-      <div class="" >
-        <h1 style="font-size:60px;"><b>Starvee Engine Update v.3 (vee-3)</b></h1>
-        <p class="text-muted">Gunakan Futuristik AI chatbot di lokal server kamu,<br />Layanan Chat bot virtual yang
-          bisa kamu gunain untuk bisnis sehari-hari bisa integrasi langsung di aplikasi kamu</p>
+        .neon-card:hover {
+            box-shadow: 0 0 25px #FF4500;
+            transform: translateY(-5px);
+        }
 
-      </div>
-    </div>
-  </div>
-<!-- Features Section -->
-<div class="container mt-5">
-  <h2 class="mb-3 fw-bolder">Starvee High Capabilites</h2>
-  <p>Due to high request of AI, The next generation AI Chatbot has been created to be reusable in code optimization in Aurora Server</p>
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-    
-    <!-- Feature 1 -->
-    <div class="col">
-      <div class="card p-3  bg-light" 
-           style="border-top: 4px solid gold; border-right: 4px solid orange; 
-                  border-radius: 0 0 50px 10px;">
-        <i class="bi bi-robot text-primary fs-1"></i>
-        <h5 class="mt-3"><b>AI Chatbot</b></h5>
-        <p>Super Charge AI Chatbot for Developsers what ever you based on, just hover the chats while stucks buddy...</p>
-      </div>
-    </div>
+        /* ICON STYLING */
+        .bi {
+            text-shadow: 0 0 10px #FFD700, 0 0 20px #FFA500;
+        }
 
-    <!-- Feature 2 -->
-    <div class="col">
-      <div class="card p-3 bg-light " 
-           style="border-top: 4px solid gold; border-right: 4px solid orange; 
-                  border-radius: 0 0 50px 10px;">
-        <i class="bi bi-shield-lock text-danger fs-1"></i>
-        <h5 class="mt-3"><b>Security</b></h5>
-        <p>Starvee AI Secure features and anti fraud system will detect anomali access, what ever you are, where ever you are</p>
-      </div>
-    </div>
+        /* FOOTER */
+        footer {
+            background: linear-gradient(45deg, #0a0a0a, #111);
+            padding: 20px 0;
+            box-shadow: 0 0 20px #FFA500;
+        }
 
-    <!-- Feature 3 -->
-    <div class="col">
-      <div class="card p-3 bg-light " 
-           style="border-top: 4px solid gold; border-right: 4px solid orange; 
-                  border-radius: 0 0 50px 10px;">
-        <i class="bi bi-speedometer2 text-success fs-1"></i>
-        <h5 class="mt-3"><b>Fastest Response</b></h5>
-        <p>You will don't get stuck wile AI develoving your product code, just think 0,2 seconds you will be happy in short time</p>
-      </div>
-    </div>
+        footer a {
+            text-shadow: 0 0 10px #FFD700;
+        }
 
-    <!-- Feature 4 -->
-    <div class="col">
-      <div class="card p-3 bg-light " 
-           style="border-top: 4px solid gold; border-right: 4px solid orange; 
-                  border-radius: 0 0 50px 10px;">
-        <i class="bi bi-cloud-arrow-down text-warning fs-1"></i>
-        <h5 class="mt-3"><b>Cloud Options</b></h5>
-        <p>Starvee engine offer Cloud Options to collect the dataset one you submit, and it will be resuable in every your projects</p>
-      </div>
-    </div>
+        footer p {
+            font-family: 'Orbitron', sans-serif;
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
 
-  </div>
-</div>
-  </div>
-  <footer class="bg-dark text-white text-center ">
-    <div class="container">
-        <p>&copy; OUR SOCIAL MEDIA</p>
-        <div>
-            <a href="https://www.instagram.com" target="_blank" class="text-white mx-2">
-                <i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
-                <i class="fab fa-facebook fa-2x"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" class="text-white mx-2">
-                <i class="fab fa-twitter fa-2x"></i>
-            </a>
+    <div class="container mt-4">
+        <div class="p-5 text-dark d-flex align-items-center position-relative"
+             style="border-top: 4px solid gold; border-right: 20px solid gold; border-top-right-radius: 40px; border-radius: 0 0 50px 10px;">
+            <div class="text-white">
+                <h1><b>Starvee Engine Update v.3 (vee-3)</b></h1>
+                <p class="text-muted">Gunakan Futuristik AI chatbot di lokal server kamu, Layanan Chatbot virtual yang bisa kamu gunakan untuk bisnis sehari-hari.</p>
+            </div>
         </div>
     </div>
-</footer>
 
+    <!-- Features Section -->
+    <div class="container mt-5">
+        <h2 class="mb-3 text-center">🚀 Starvee High Capabilities</h2>
+        <p class="text-center">Due to high request of AI, the next generation AI Chatbot has been created.</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            
+            <!-- Feature 1 -->
+            <div class="col">
+                <div class="card p-3 neon-card text-center">
+                    <i class="bi bi-robot text-primary fs-1"></i>
+                    <h5 class="mt-3"><b>AI Chatbot</b></h5>
+                    <p>Supercharged AI Chatbot to help developers optimize their code with ease.</p>
+                </div>
+            </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+            <!-- Feature 2 -->
+            <div class="col">
+                <div class="card p-3 neon-card text-center">
+                    <i class="bi bi-shield-lock text-danger fs-1"></i>
+                    <h5 class="mt-3"><b>Security</b></h5>
+                    <p>Advanced fraud detection to ensure data safety, no matter where you are.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col">
+                <div class="card p-3 neon-card text-center">
+                    <i class="bi bi-speedometer2 text-success fs-1"></i>
+                    <h5 class="mt-3"><b>Fastest Response</b></h5>
+                    <p>With a 0.2s response time, get real-time AI assistance without delay.</p>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="col">
+                <div class="card p-3 neon-card text-center">
+                    <i class="bi bi-cloud-arrow-down text-warning fs-1"></i>
+                    <h5 class="mt-3"><b>Cloud Options</b></h5>
+                    <p>Collect and store datasets for reusable AI integration across multiple projects.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <div class="container">
+            <p>&copy; 2025 <b>OUR SOCIAL MEDIA</b></p>
+            <div>
+                <a href="https://www.instagram.com" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
