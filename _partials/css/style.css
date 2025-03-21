@@ -1,0 +1,157 @@
+/* css/style.css */
+
+/* Menggunakan warna gelap yang tidak terlalu mencolok */
+body {
+  font-family: 'Product Sans', sans-serif;
+  background-color: #1e1e2e; /* Warna gelap lembut */
+  color: #e0e0e0; /* Warna teks yang tidak terlalu terang */
+}
+
+/* Memberikan sentuhan modern dengan garis bawah emas */
+.custom-section {
+  border-bottom: 3px solid #f4c430;
+}
+
+/* Container login dengan background lebih elegan */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #12121a; /* Latar belakang lebih pekat */
+}
+
+.login-card {
+  background: #28283d; /* Warna kartu lebih gelap */
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Efek bayangan lebih dalam */
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-card h2 {
+  color: #f4c430; /* Warna emas */
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Input dengan desain lebih modern */
+.form-control {
+  background: #212131;
+  color: #e0e0e0;
+  border-radius: 10px;
+  padding: 12px;
+  border: 2px solid #444;
+  transition: all 0.3s;
+}
+
+.form-control:focus {
+  border-color: #f4c430;
+  background: #2a2a3d;
+  box-shadow: 0 0 10px rgba(244, 196, 48, 0.5);
+}
+
+/* Tombol login lebih menarik */
+.btn-login {
+  background: #f4c430;
+  border: none;
+  border-radius: 20px;
+  padding: 12px;
+  font-weight: bold;
+  color: #12121a;
+  transition: all 0.3s;
+}
+
+.btn-login:hover {
+  background: #d4a020;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(244, 196, 48, 0.5);
+}
+
+.forgot-password {
+  color: #f4c430;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard lebih clean dan modern */
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Kartu widget modern */
+.card-widget {
+  background: #29293d;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-widget:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Kartu profil dengan efek lebih elegan */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f4c430;
+  box-shadow: 0 0 10px rgba(244, 196, 48, 0.5);
+}
+
+/* Item meeting dengan efek hover */
+.meeting-item {
+  background: #33334d;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.meeting-item:hover {
+  background: #44445a;
+  transform: translateX(5px);
+}
+
+/* Modal lebih modern */
+.modal-content {
+  background: #28283d;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #f4c430, #d4a020);
+  border-radius: 15px 15px 0 0;
+}
+
+/* Gaya untuk gambar pengguna yang diundang */
+.invited-user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f4c430;
+  margin-right: 10px;
+}
